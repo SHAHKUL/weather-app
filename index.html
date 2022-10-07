@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+     <link rel="stylesheet" href="index.css">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+     
+     
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css"> -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+
+     
+</head>
+<body>
+    <nav>
+    <div class="row">
+       <div class="col-sm-4"><i class="fa-solid fa-cloud fa-10x"></i></div>
+      
+       <div class="col-sm-8"><h1>Weather Forecast</h1></div>
+    </div>
+</nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-12" id="search">
+                <input type="text" id="text" style="color: black;" placeholder="Type your city name">
+                <i class="fa fa-search fa-2x" onclick="foo()" id="button"></i>
+
+            </div>
+        </div>
+
+        <div class="row" id="box">
+            <div class="col-sm-2" id="one"> 
+             <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" id="image" height="100px" width="100px">   <p id="temp">30.4 Degree Celsius </p>
+            </div>
+
+        <div class="col-sm-2" id="one">
+                <!-- <img src="wind.jpg"  height="100px" width="100px" style="border-radius: 10px;"> -->
+                <i class="fa-solid fa-wind fa fa-6x" height="100px" width="100px" style="border-radius: 10px"></i>
+                
+                <p id="wind">Wind 8.6 Km/Hr</p>
+        </div>
+
+            <div class="col-sm-2" id="two">
+                <i class="fa-solid fa-gauge fa-6x"></i>
+                <p id="pressure">Pressure 29.87 Pascal</p>
+            </div>
+
+            <div class="col-sm-2" id="one">
+                <i class="fa-solid fa-water fa-6x"></i> 
+            
+                <p id="humidity">Humidity 58 %</p>
+            </div>
+
+
+            <div class="col-sm-2" id="three"> 
+                <i class="fa fa-thermometer-three-quarters fa-5x" style="color: rgb(255, 58, 58);align-content: center;"></i>
+                <p id="feelslike">Feels Like 33.5 Celsius</p>
+            </div>
+
+            <div class="col-sm-2" >
+                <i class="fa fa-calendar fa-5x" style="color: rgb(21, 21, 255);" ></i>
+                <p id="last">Last Updated 2022-01-14 09:45</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p class="foot" style="color: white;">All rights reserved © 2022 </p>
+        <div class="font">
+        <a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-2x" style="padding: 20px;"></i></a>
+        <a href="https://www.twitter.com"><i class="fa fa-twitter-square fa-2x" style="  padding: 20px;" ></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x" style=" padding: 20px;"></i></a>
+    </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/5c5692ec3c.js" crossorigin="anonymous"></script>
+</body>
+</html>
